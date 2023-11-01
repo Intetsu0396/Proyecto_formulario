@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="d-flex justify-content-center algin-items-center">
+    <!-- Primero construimos un div.container para marcar
+         los margenes usados para crear el form -->
+
+    <div class="container">
+
+        <!-- Se usa un card para hacer la estructura del form -->
+       <form class="card">
+
+        <!-- Aqui empieza el header del formulario -->
+            <div class="card-header bg-white">
+                <h1>Payment form example</h1>
+            </div>
+        <!-- Aqui finaliza el header del formulario -->
+
+        <!-- Aqui empieza el body del formulario -->
+            <div class="card-body g-3 row needs-validation" novalidate>
+            <!-- el div.row es para poder crear las grillas
+                y el div.col va a ser para crear los recuadros
+                del formulario -->
+                
+                    <!-- primer dato -->
+                    <div class="col-5">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="card#" class="form-label fw-medium">Card #</label>
+                        <input type="text" placeholder="XXXXXXXXXXXXXXXXXXX" class="form-control fw-medium" id="card#" required>
+                        <div class="valid-feedback">completed</div>
+                        <div class="invalid-feedback">wrong data</div>
+                    </div>
+
+                    <!-- segundo dato -->
+                    <div class="col-3">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="CVC#" class="form-label fw-medium">CVC #</label>
+                        <input type="text" placeholder="0000" class="form-control" id="CVC#" required>
+                        <div class="valid-feedback">completed</div>
+                        <div class="invalid-feedback">wrong data</div>
+                    </div>
+
+                    <!-- tercer dato -->
+                    <div class="col-4">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="Amount" class="form-label fw-medium">Amount</label>
+                        <div class="d-flex">
+                            <h6 class="fw-bolder">$</h6>
+                            <input type="text" placeholder="Amount" class="form-control" id="Amount" required>
+                            <div class="valid-feedback">completed</div>
+                            <div class="invalid-feedback">wrong data</div>
+                        </div>
+                    </div>
+
+                    <!-- cuarto dato -->
+                    <div class="col-6">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="fisrt-name" class="form-label fw-medium">First Name</label>
+                        <input type="text" class="form-control" id="fisrt-name" required>
+                        <div class="valid-feedback">completed</div>
+                        <div class="invalid-feedback">wrong data</div>
+                    </div>
+
+                    <!-- quinto dato -->
+                    <div class="col-6">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="last-name" class="form-label fw-medium">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" required>
+                        <div class="valid-feedback">completed</div>
+                        <div class="invalid-feedback">wrong data</div>
+                    </div>
+
+                    <!-- sexto dato -->
+                    <div class="col-6">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="city" class="form-label fw-medium">City</label>
+                        <input type="text" class="form-control" id="city" required>
+                        <div class="valid-feedback">completed</div>
+                        <div class="invalid-feedback">wrong data</div>
+                    </div>
+
+                    <!-- septimo dato -->
+                    <div class="col-3">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="state" class="form-label fw-medium">State</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected class="text">Pick a state</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+
+                    <!-- octavo dato -->
+                    <div class="col-3">
+                    <!-- usar label y input para crear formularios -->
+
+                        <label for="postal-code" class="form-label fw-medium">Postal code</label>
+                        <input type="text" class="form-control" id="postal-code" required>
+                        <div class="valid-feedback">completed</div>
+                        <div class="invalid-feedback">wrong data</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                    <!-- noveno dato: INPUT RADIO -->    
+                    <div class="col-4 d-flex justify-content-start flex-column">
+                    <!-- usar label y input para crear formularios -->
+                        <label for="postal-code" class="form-label fw-medium">We accept</label>
+                        <div class="d-flex bg-secondary rounded" style="height: 3cap;" id="checkbox-round"> 
+                        
+
+                            <div class="form-check mx-2 col-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                </label>
+                            </div>
+
+                            <div class="form-check mx-2 col-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                </label>
+                            </div>
+
+                            <div class="form-check mx-2 col-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <i class="fa-brands fa-cc-diners-club"></i>
+                                </label>
+                            </div>
+
+                            <div class="form-check  col-2" >
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                </label>
+                            </div>
+
+                            <div class="valid-feedback">completed</div>
+                            <div class="invalid-feedback">wrong data</div>
+                        </div>
+                    </div>
+                    <!-- decimo dato -->
+                    <div class="col-6">
+                        <!-- usar label y input para crear formularios -->
+        
+                            <label for="message" class="form-label fw-medium">Message</label>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2"></label>
+                                </div>
+                            <div class="valid-feedback">completed</div>
+                            <div class="invalid-feedback">wrong data</div>
+                    </div>
+                    </div>
+
+            
+
+
+            </div>
+        <!-- Aqui finaliza el body del formulario -->
+
+        <!-- Aqui empieza el footer del formulario -->
+            <div class="card-footer text-muted bg-white d-flex justify-content-end">
+                <button type="submit" class="btn btn-secondary mx-2 ">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        <!-- Aqui termina el footer del fomrulario -->
+
+        </form>
+       <!-- Fin del fomrato card -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/277734545f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
