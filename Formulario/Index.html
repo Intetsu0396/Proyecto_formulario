@@ -26,12 +26,16 @@
             <!-- el div.row es para poder crear las grillas
                 y el div.col va a ser para crear los recuadros
                 del formulario -->
+
+                    <div class="col-12">
+                        <p class="bg-danger-subtle p-3 px-4 rounded text-danger-emphasis fw-medium">Some fields are missing</p>
+                    </div>
                 
                     <!-- primer dato -->
                     <div class="col-5">
                     <!-- usar label y input para crear formularios -->
 
-                        <label for="card#" class="form-label fw-medium">Card #</label>
+                        <label for="card#" class="form-label fw-medium text-light-emphasis">Card #</label>
                         <input type="text" placeholder="XXXXXXXXXXXXXXXXXXX" class="form-control fw-medium" id="card#" required>
                         <div class="valid-feedback">completed</div>
                         <div class="invalid-feedback">wrong data</div>
@@ -115,44 +119,44 @@
 
                     <div class="d-flex justify-content-between">
                     <!-- noveno dato: INPUT RADIO -->    
-                    <div class="col-4 d-flex justify-content-start flex-column">
-                    <!-- usar label y input para crear formularios -->
-                        <label for="postal-code" class="form-label fw-medium">We accept</label>
-                        <div class="d-flex bg-secondary rounded" style="height: 3cap;" id="checkbox-round"> 
-                        
+                        <div class="col-md-2 col-lg-3 d-flex justify-content-start flex-column">
+                        <!-- usar label y input para crear formularios -->
+                            <label for="postal-code" class="form-label fw-medium">We accept</label>
+                            <div class="bg-secondary d-flex m-2 rounded" style="height: 3cap;" id="checkbox-round"> 
+                            
 
-                            <div class="form-check mx-2 col-2">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    <i class="fa-brands fa-cc-mastercard"></i>
-                                </label>
+                                <div class="form-check m col-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check mx-2 col-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check mx-2 col-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        <i class="fa-brands fa-cc-diners-club"></i>
+                                    </label>
+                                </div>
+
+                                <div class="form-check  col-2" >
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        <i class="fa-brands fa-cc-amex"></i>
+                                    </label>
+                                </div>
+
+                                <div class="valid-feedback">completed</div>
+                                <div class="invalid-feedback">wrong data</div>
                             </div>
-
-                            <div class="form-check mx-2 col-2">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    <i class="fa-brands fa-cc-visa"></i>
-                                </label>
-                            </div>
-
-                            <div class="form-check mx-2 col-2">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    <i class="fa-brands fa-cc-diners-club"></i>
-                                </label>
-                            </div>
-
-                            <div class="form-check  col-2" >
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    <i class="fa-brands fa-cc-amex"></i>
-                                </label>
-                            </div>
-
-                            <div class="valid-feedback">completed</div>
-                            <div class="invalid-feedback">wrong data</div>
                         </div>
-                    </div>
                     <!-- decimo dato -->
                     <div class="col-6">
                         <!-- usar label y input para crear formularios -->
@@ -162,6 +166,8 @@
                                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                                     <label for="floatingTextarea2"></label>
                                 </div>
+                                    <div class="form-text text-body-tertiary fw-bold">Add any notes here.</div>
+                                
                             <div class="valid-feedback">completed</div>
                             <div class="invalid-feedback">wrong data</div>
                     </div>
